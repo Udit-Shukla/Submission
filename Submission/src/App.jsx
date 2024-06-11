@@ -6,7 +6,7 @@ import NavigationTab from './components/NavigationTab'
 function App() {
 
   return (
-    <div className='w-[100vw] h-[100vh] overflow-x-hidden flex flex-row justify-between' >
+    <div className='w-[100vw] h-[100vh] overflow-x-hidden flex flex-row justify-between ' >
     <NavigationTab/>
     <MainArea/>
     <HighlightsTab/>

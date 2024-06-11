@@ -8,10 +8,10 @@ const Alerts = ({
   image
 }) => {
   return (
-    <div className="flex flex-col rounded-lg shadow-lg bg-white pb-6 w-[47%] pt-4 hover:shadow-2xl hover:cursor-pointer" >
+    <div className="flex flex-col rounded-lg shadow-lg bg-white pb-6 pt-4 hover:shadow-2xl hover:cursor-pointer" >
        
 
-        <div className="flex flex-row mb-8 mx-1">
+        <div className="flex flex-col mb-8 mx-1">
 
             <div className="flex flex-col gap-4 relative py-4">
             <div className="flex flex-row justify-between px-4">

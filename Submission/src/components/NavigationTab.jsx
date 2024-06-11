@@ -12,10 +12,10 @@ import trackign from '../assets/icons/trackign.svg'
 import wallet from '../assets/icons/wallet.svg'
 const NavigationTab = () => {
   return (
-    <div className=' w-[5%] h-full flex flex-col items-center gap-2 pt-4 shadow-sm bg-white'>
+    <div className=' flex flex-col items-center gap-2 pt-4 shadow-sm bg-white min-w-[5%] h-full sm:relative'>
     {/* Logo  */}
     <div className="p-2 cursor-pointer hover:rounded-full hover:bg-gray-200">
-      <img src={Group} alt="logo"/>
+      <img  src={Group} alt="logo"/>
       </div>
 
     {/* Navigation Tab */}
