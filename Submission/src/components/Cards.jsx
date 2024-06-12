@@ -26,8 +26,12 @@ const data = {
 }
 const Cards = ({legend1,legend2,legend3,value1,value2,value3,title}) => {
   return (
-    <div className='border rounded-md shadow-md p-4 flex flex-col w-60 gap-2 hover:shadow-xl hover:scale-105'>
+    <div className=' relative border rounded-md shadow-md p-4 flex flex-col w-60 gap-2 hover:shadow-xl hover:scale-105'>
     <p>{title}</p>
+    <div className='flex flex-col gap-1 text-xs font-normal items-center justify-center bottom-52 left-24 absolute '>
+    <p className='text-[#676666] font-second'>Total</p>
+    <p className='text-[#000000] font-semibold font-second'>123456</p>
+    </div>
    <Doughnut data={data} className='mb-4' />
    <div className='flex flex-row justify-between bg-gradient-to-r from-[#FFFFFF] to-[#FFCB49] px-2 rounded-md'>
     <p>{legend1}</p>
