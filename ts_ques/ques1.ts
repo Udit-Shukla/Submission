@@ -91,8 +91,6 @@ function getMonthlyLoggedInUsers(users: User[]): { [month: string]: number } {
       device.timestamp.forEach((timestamp) => {
         if (timestamp.logged_in.toLocaleString('en-US', { month: 'long' }) === month) {
             activeUsers.add(user);
-
-
           return; 
         }
       });

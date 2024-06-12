@@ -1,3 +1,4 @@
+import { Toaster } from 'react-hot-toast'
 import './App.css'
 import HighlightsTab from './components/HighlightsTab'
 import MainArea from './components/MainArea'
@@ -10,6 +11,7 @@ function App() {
     <NavigationTab/>
     <MainArea/>
     <HighlightsTab/>
+    <Toaster/>
     </div>
   )
 }

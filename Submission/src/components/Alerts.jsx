@@ -1,3 +1,4 @@
+import toast from "react-hot-toast"
 import Button from "./Button"
 
 const Alerts = ({
@@ -7,6 +8,12 @@ const Alerts = ({
   description,
   image
 }) => {
+
+  const clickHandler = () => {
+    
+    toast.error('Issue was ignored! ')
+  }
+
   return (
     <div className="flex flex-col rounded-lg shadow-lg bg-white pb-6 pt-4 hover:shadow-2xl hover:cursor-pointer" >
        
@@ -29,9 +36,9 @@ const Alerts = ({
                 <p className="ml-5 font-second font-normal text-xs"> {description}</p>
             
                 <div className="flex flex-row items-center gap-8 absolute bottom-[-40px] right-8">
-            <p className="text-[#1A3875] flex flex-row gap-2 hover:cursor-pointer underline font-second font-normal text-xs leading-[14.06px]">
+            <button onClick={clickHandler} className="text-[#1A3875] flex flex-row gap-2 hover:cursor-pointer underline font-second font-normal text-xs leading-[14.06px]">
           Ignore
-        </p> 
+        </button> 
         <Button text="Resolve"></Button>
             </div>
            
