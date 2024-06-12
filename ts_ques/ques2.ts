@@ -1,3 +1,10 @@
+// Task 2 : A multi pick up and drop shipment is to be divided into multiple trips, mention the logic to figure out of the given list of trips are legit and fulfils the shipment with typescript. (Please note:  A shipment can have multiple pick up points and drop points, and a trip can also have multiple pick up points , drop points and an additional option of a warehouse a via point.)
+// Example:  
+// For a shipment with Pick ups : (A, B), Drop points (C,D),
+// a) Valid set of trips are :  Trip 1: (A,W), Trip 2: (B, W), Trip 3: (W,C), Trip 4: (W, D).
+// b) Invalid set of trips are : Trip 1: (A,W1), Trip 2: (B, W2), Trip 3: (W3,C), Trip 4: (W4, D).
+
+
 interface Trip {
   pickup: string[];
   dropoff: string[];
