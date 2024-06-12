@@ -64,7 +64,6 @@ const users: User[] = [
 }
 ]
 
-// Find the list of users who have logged in from multiple devices in the in a month and number of active users 
 
 function getMonthlyLoggedInUsers(users: User[]): { [month: string]: number } {
     const monthlyLoggedIn: { [month: string]: number } = {};

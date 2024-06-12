@@ -81,5 +81,5 @@ const invalidTrips: Trip[] = [
   { pickup: ['W4'], dropoff: ['D'] }
 ];
 
-console.log(isValidTrips(validTrips, shipment)); // true
-console.log(isValidTrips(invalidTrips, shipment)); // false
+console.log(isValidTrips(validTrips, shipment)); 
+console.log(isValidTrips(invalidTrips, shipment)); 
